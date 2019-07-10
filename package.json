@@ -1,6 +1,6 @@
 {
   "name": "mercury-docker",
-  "version": "0.3",
+  "version": "0.3.0",
   "description": "A simple server to handle scaping web pages for content with JSON POST requests ",
   "main": "main.js",
   "dependencies": {
