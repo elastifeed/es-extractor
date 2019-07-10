@@ -6,6 +6,7 @@ RUN apk add --update --no-cache \
     git
 
 COPY main.js .
+COPY logger.js .
 COPY package.json .
 RUN npm install
 
