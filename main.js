@@ -24,18 +24,18 @@ app.post("/mercury/url", async function (req, res) {
     logger.info("Recieved parse request");
 
     if (!data.url) { // POST didn't have a url
-        await logger.error("Post didn't have a url");
+        logger.error("Post didn't have a url");
         return res.status(400).send({
             error: 1,
             message: "Invalid JSON object"
         });
     }
 
-    await logger.info(`Parsing from url: ${data.url}`);
+    logger.info(`Parsing from url: ${data.url}`);
     let parsed = await Mercury.parse(data.url, { headers: header, contentType: 'html' });
     parsed = await extractTextFromHtml(parsed); // Use turndown and querySelectors to retrieve markdown & plain text
     res.json(parsed);
-    await logger.info(`Parsing from url done: ${data.url}`);
+    logger.info(`Parsing from url done: ${data.url}`);
 
 });
 
