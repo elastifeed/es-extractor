@@ -7,7 +7,7 @@
     "@postlight/mercury-parser": "^2.1.1",
     "express": "^4.16.4",
     "express-http-context": "^1.2.2",
-    "jsdom": "^15.1.0",
+    "jsdom": "^16.5.0",
     "node-uuid": "^1.4.8",
     "turndown": "^5.0.3",
     "winston": "^3.2.1"
